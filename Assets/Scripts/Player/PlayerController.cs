@@ -147,6 +147,18 @@ public class PlayerController : MonoBehaviour
 
         if (charControl.enabled)
             charControl.Move((anim.applyRootMotion ? Vector3.Scale(velocity, Vector3.up) : velocity) * Time.deltaTime);
+<<<<<<< Updated upstream
+=======
+
+        if (Input.GetKeyDown(playerInput.push))
+        {
+            PushObject();
+        }
+        else if(Input.GetKeyDown(playerInput.pull))
+        {
+            PullObject();
+        }
+>>>>>>> Stashed changes
     }
 
     private void CheckForGround()
